@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --bg-clr: #6b7fba;
+  --white: #fff;
+  --rleft-bg: #9ab3eb;
+  --rright-bg: #8096d0;
+  --primary-text-clr: #525252;
+}
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Body */
+body {
+  background: var(--bg-clr);
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--primary-text-clr);
+  padding: 0 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--white);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--primary-text-clr);
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+  color: var(--rleft-bg);
+}
+
+/* Resume Styles */
+.resume {
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+  background: var(--white);
+}
+
+.resume .resume_left {
+  width: 270px;
+}
+
+.resume .resume_right {
+  background: var(--rright-bg);
+  width: calc(800px - 270px);
+}
+
+/* Profile and Content styling */
+.resume_left .r_profile_pic {
+  background: var(--rleft-bg);
+}
+
+.resume_left .r_profile_pic img {
+  width: 100%;
+}
+
+/* Section headers */
+h2 {
+  font-family: "Calligraffitti", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume_left .r_aboutme p {
+  text-align: center;
+}
+
+/* Portfolio section styling */
+.r_portfolio {
+    margin-top: 20px;
+  }
+  
+  .r_portfolio ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .r_portfolio_item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .r_portfolio_item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .r_portfolio_item img {
+    width: 60%;  /* Sumažinta 60% */
+    height: auto; 
+    max-width: 100%; /* Užtikrina, kad paveikslėliai nesikirs su tėvų elementu */
+    object-fit: cover; /* Užtikrina gerą paveikslėlio išdėstymą, kad jis išsiskleistų pagal container */
+    border-radius: 8px;
+  }
+  
+  .r_portfolio_item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .r_portfolio_item p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .r_portfolio_item a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .r_portfolio_item a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .r_portfolio ul {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .r_portfolio_item {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  
+
+
