@@ -8,7 +8,11 @@
 </head>
 <body>
 
-<!-- Navigation Menu -->
+ 
+<button id="theme-toggle" class="theme-toggle">
+    <span id="theme-icon">🌙</span> 
+  </button>
+
 <nav class="navbar">
     <ul>
         <li><a href="index2.html">Home</a></li>
@@ -18,7 +22,7 @@
     </ul>
 </nav>
 
-<!-- Resume Page Content -->
+
 <section>
     <h1>My Resume</h1>
     <p>Here is a brief overview of my education and work experience:</p>
@@ -27,7 +31,34 @@
         <li>Work Experience: Web Developer at Google, 2015-2017</li>
         <li>Work Experience: Senior Developer at Facebook, 2017-2022</li>
     </ul>
+    <div id="clock" class="clock">
+        <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span>
+    </div>
 </section>
+<h1>Embedding YouTube Videos and Audio</h1>
+    <div class="media-container">
+        <!-- YouTube Video 1 -->
+        <iframe 
+            src="https://www.youtube.com/embed/rgy1TV12LDc" 
+            title="YouTube video 1" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
 
+        <!-- YouTube Video 2 -->
+        <iframe 
+            src="https://www.youtube.com/embed/Nhb05wE2C5E" 
+            title="YouTube video 2" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+        <!-- Audio File -->
+        <audio controls>
+            <source src="assets/audio/audio-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+<script src="assets/js/demo.js"></script>
 </body>
 </html>

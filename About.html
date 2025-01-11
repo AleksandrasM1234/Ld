@@ -8,7 +8,11 @@
 </head>
 <body>
 
-<!-- Navigation Menu -->
+<button id="theme-toggle" class="theme-toggle">
+    <span id="theme-icon">🌙</span> 
+  </button>
+
+
 <nav class="navbar">
     <ul>
         <li><a href="index2.html">Home</a></li>
@@ -18,12 +22,17 @@
     </ul>
 </nav>
 
-<!-- About Me Page Content -->
+
 <section>
     <h1>About Me</h1>
     <p>Hi, I am Alexander. I am a web developer with a passion for creating amazing websites and applications.</p>
+    <img src="assets/images/mano-foto.jpg" alt="My Photo" class="profile-photo">
+    <div id="clock" class="clock">
+        <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span>
+    </div>
 </section>
 
+<script src="assets/js/demo.js"></script>
 </body>
 </html>
 

@@ -8,17 +8,19 @@
 </head>
 <body>
 
-<!-- Navigation Menu -->
+<button id="theme-toggle" class="theme-toggle">
+    <span id="theme-icon">🌙</span> 
+  </button>
+
 <nav class="navbar">
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="resume.html">Resume</a></li>
     </ul>
 </nav>
 
-<!-- Portfolio Page Content -->
 <section>
     <div class="r_portfolio">
         <h2>My Portfolio</h2>
@@ -29,22 +31,36 @@
                 <img src="assets/images/portfolio1.jpg" alt="Portfolio 1">
                 <h3>Project 1</h3>
                 <p>This is a brief description of the project, highlighting the main goals and features.</p>
-                <a href="#">View Project</a>
+                <a href="#" class="view-project" data-image="assets/images/portfolio1.jpg">View Project</a>
             </li>
             <li class="r_portfolio_item">
                 <img src="assets/images/portfolio2.jpg" alt="Portfolio 2">
                 <h3>Project 2</h3>
                 <p>This project involves advanced front-end development with interactive elements.</p>
-                <a href="#">View Project</a>
+                <a href="#" class="view-project" data-image="assets/images/portfolio2.jpg">View Project</a>
             </li>
             <li class="r_portfolio_item">
                 <img src="assets/images/portfolio3.jpg" alt="Portfolio 3">
                 <h3>Project 3</h3>
                 <p>This was a creative design project focused on web UI/UX principles.</p>
-                <a href="#">View Project</a>
+                <a href="#" class="view-project" data-image="assets/images/portfolio3.jpg">View Project</a>
             </li>
         </ul>
     </div>
+    <div id="clock" class="clock">
+        <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span>
+    </div>
+</section>
+
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image" alt="Expanded View">
+</div>
+
+<script src="assets/js/demo.js"></script>
+</body>
+</html>
+
     
 
 

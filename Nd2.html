@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimetro Vartotojo Sąsaja</title>
+  <link rel="stylesheet" href="asset/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Multimetro Vartotojo Sąsaja</h1>
+    </header>
+
+    <div class="display">
+      <span id="measurement">0.00 V</span>
+    </div>
+
+    <div class="controls">
+      <label for="mode">Pasirinkite režimą:</label>
+      <select id="mode" onchange="changeMode()">
+        <option value="voltage">Įtampa</option>
+        <option value="current">Srovė</option>
+        <option value="resistance">Pasipriešinimas</option>
+      </select>
+
+      <label for="range">Pasirinkite diapazoną:</label>
+      <select id="range" onchange="changeRange()">
+        <option value="auto">Automatiškai</option>
+        <option value="low">Žemas</option>
+        <option value="medium">Vidutinis</option>
+        <option value="high">Aukštas</option>
+        <option value="very_high">Labai aukštas</option>
+      </select>
+
+      <button id="measureButton" onclick="startMeasurement()">Pradėti matavimą</button>
+    </div>
+
+    <footer>
+      <p>© 2025 Multimetras</p>
+    </footer>
+  </div>
+
+  <script src="asset/script.js"></script>
+</body>
+</html>
